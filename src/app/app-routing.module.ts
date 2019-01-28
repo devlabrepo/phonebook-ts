@@ -4,13 +4,14 @@ import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
 import { TableComponent } from './table/table.component';
 import { HomeComponent } from './home/home.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 
 
 const appRoutes: Routes = [
   {
       path: "contacts",
-      component: TableComponent, 
+      component: ContactsComponent, 
     //  canActivate: [AuthGuardService],
   },
   {
