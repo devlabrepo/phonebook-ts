@@ -1,10 +1,29 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { AppComponent } from './app.component';
+import { TableComponent } from './table/table.component';
+import { HomeComponent } from './home/home.component';
 
-const routes: Routes = [];
+
+
+const appRoutes: Routes = [
+  {
+      path: "contacts",
+      component: TableComponent, 
+    //  canActivate: [AuthGuardService],
+  },
+  {
+    path: "home",
+    component: HomeComponent, 
+  //  canActivate: [AuthGuardService],
+}
+  
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [RouterModule.forRoot(appRoutes), CommonModule], 
+  exports: [RouterModule],
+  bootstrap: [AppComponent]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule  { }
