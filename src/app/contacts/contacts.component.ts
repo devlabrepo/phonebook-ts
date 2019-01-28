@@ -65,9 +65,10 @@ export class ContactsComponent implements OnInit {
     let phoneNumber = new HttpParams().append("phone", number);
     return this.http.post("http://localhost:8080/api/dto/tags", list, { params: phoneNumber })
       .subscribe(s => { }, (err: HttpErrorResponse) => { console.error(err) },
-        () => { 
+        () => {
           this.getContacts();
-        }) };
+        })
+  };
 
   addContact(number: string) {
     return this.http.post("http://localhost:8080/api/dto/contacts", this.contact)
