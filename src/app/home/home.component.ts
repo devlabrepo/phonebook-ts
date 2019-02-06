@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MainService } from '../service/main.service';
+
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+
+  counter: number;
+
+  constructor(private mainService: MainService) { }
 
   ngOnInit() {
+  //  this.mainService.incrementCounter();
   }
+
+  
 
 }

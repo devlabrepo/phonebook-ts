@@ -59,12 +59,14 @@
           "options": {
             "browserTarget": "phonebook-ts:build"
           },
+          
           "configurations": {
             "production": {
               "browserTarget": "phonebook-ts:build:production"
             }
           }
         },
+
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {

@@ -1,0 +1,18 @@
+.forms {
+    float: left;
+    margin: 0.2em;
+}
+
+.button {
+    margin: 0.1em;
+    min-width: 38px;
+}
+
+th:hover {
+    background-color: rgb(184, 180, 180);
+   
+}
+
+table {
+    cursor: pointer;
+}

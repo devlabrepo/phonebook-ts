@@ -1,12 +1,11 @@
+<app-navbar></app-navbar>
 <div class="container-fluid">
-  <div class="row">
-    <button routerLink="/contacts">CONTACTS</button>
-    <button routerLink="/home">HOME</button>
-  </div>
-  <div class="row">
-
+ 
     <router-outlet></router-outlet>
-  </div>
-
-
+ 
+  
 </div>
+
+<ngx-spinner bdColor="rgb(255, 255, 255,0.75)" size="large" color="#80bfff" type="ball-scale-multiple">
+  <p style="font-size: 1em; color: rgb(99, 99, 99); text-align: center">loading...</p>
+</ngx-spinner>

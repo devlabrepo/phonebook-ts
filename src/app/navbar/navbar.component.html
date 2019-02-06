@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark flex-row">
+    <a class="navbar-brand mr-auto" href="#" routerLink="/home">
+        <img src="./assets/messaging.png" class="img-fluid" style="max-width: 20%; height: auto;" alt="Responsive image">
+    </a>
+    <ul class="navbar-nav flex-row mr-lg-0">
+        <li class="nav-item">
+            <a class="nav-link pr-2" routerLink="/home">Home</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mr-3 mr-lg-0" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i><span class="caret"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" *ngIf="isLoggedIn" href="#" routerLink="/contacts">Contacts</a>
+                <a class="dropdown-item" *ngIf="!isLoggedIn" href="#" routerLink="/login">Login</a>
+                <a class="dropdown-item" *ngIf="isLoggedIn" href="#" (click)="logout()">Logout</a>
+            </div>
+        </li>
+    </ul>
+
+</nav>

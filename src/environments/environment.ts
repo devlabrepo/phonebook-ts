@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  config: {
+    host: "http://89.67.215.18:11780/phonebook/api/dto"
+  }
 };
 
 /*

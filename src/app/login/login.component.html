@@ -1,0 +1,21 @@
+
+<div class="container">
+    <div class="row justify-content-center align-items-center" style="height:100vh">
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body">
+                    <form (ngSubmit)="login(formData)" #formData="ngForm">
+                        <div class="form-group">
+                            <input ngModel type="text" class="form-control" name="login" required>
+                        </div>
+                        <div class="form-group">
+                            <input ngModel type="password" class="form-control" name="password" required>
+                        </div>
+                        <button type="submit" id="sendlogin" class="btn btn-primary">login</button>
+                        <button type="button" class="btn btn-primary" [disabled]="formData.invalid" (click)="signup(formData)"> sign in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
