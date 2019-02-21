@@ -11,6 +11,8 @@ export class HomeComponent implements OnInit {
 
 
   counter: number;
+  imgUrl: string[];
+  greet: string[];
 
   constructor(private mainService: MainService) { }
 
